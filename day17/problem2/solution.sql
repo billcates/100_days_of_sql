@@ -10,10 +10,4 @@ select
     startdate,
     enddate
 from cte where rk=2
-union all 
-select 
-    username,
-    activity,
-    startdate,
-    enddate
-from cte where ct<2
+or ct<2
