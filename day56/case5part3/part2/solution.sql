@@ -6,6 +6,7 @@ with cte as(
         else 'before' end as base
     from data_mart.clean_weekly_sales
     where week_number between 13 and 37
+    and calendar_year='2020'
 ),
 final as(
     select sum(case when base='before' then sales end) as before

@@ -6,6 +6,7 @@ with cte as(
         else 'before' end as base
     from data_mart.clean_weekly_sales
     where week_number between 21 and 28
+    and calendar_year='2020'
 ),
 final as( 
     select 
