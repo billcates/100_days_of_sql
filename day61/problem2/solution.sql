@@ -30,4 +30,5 @@ select *
 from final
 where s =(
         select max(s) 
+        
         from final)
